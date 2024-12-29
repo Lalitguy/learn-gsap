@@ -22,18 +22,20 @@ function Loader() {
   });
 
   return (
-    <div className="loaderDiv">
-      <img
-        ref={loaderShine}
-        src="/public/assets/preload_gradient.webp"
-        className="logo-shine"
-      />
-      <img
-        ref={loaderLogo}
-        src="/public/assets/logo_gradient.webp"
-        className="logo-loader-text"
-      />
-    </div>
+    <section className="loader-section">
+      <div className="loader-wrap">
+        <img
+          ref={loaderShine}
+          src="/public/assets/preload_gradient.webp"
+          className="logo-shine"
+        />
+        <img
+          ref={loaderLogo}
+          src="/public/assets/logo_gradient.webp"
+          className="logo-loader-text"
+        />
+      </div>
+    </section>
   );
 }
 

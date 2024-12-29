@@ -2,6 +2,7 @@ import HeroSection from "../HeroSection";
 import NavBar from "../NavBar";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import PatchedSection from "./PatchedSection";
 
 gsap.registerPlugin(useGSAP);
 
@@ -23,6 +24,7 @@ const Home = () => {
       <NavBar />
       <main>
         <HeroSection />
+        <PatchedSection />
       </main>
     </>
   );

@@ -42,8 +42,10 @@ function StaggeredText({
       className={`animated-text-wrap ${parentClassName || " "}`}
       ref={textRef}
     >
-      {children.split("").map((char) => (
-        <span className={`letter ${className || ""}`}>{char}</span>
+      {children.split("").map((char, i) => (
+        <span className={`letter ${className || ""}`} key={i}>
+          {char}
+        </span>
       ))}
     </div>
   );
